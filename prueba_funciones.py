@@ -38,15 +38,15 @@ def registrar_pedido(pedidos):
             opc=int(input("Ingrese opcion deseada: "))
             if opc==1:
                 pequeno +=1
-                print("Paquete registrado")
+                print("Paquete registrado\n")
             elif opc==2:
                 mediano +=1
-                print("Paquete registrado")
+                print("Paquete registrado\n")
             elif opc==3:
                 grande +=1
-                print("Paquete registrado")
+                print("Paquete registrado\n")
             elif opc==4:
-                print("Pedido registrado con exito")
+                print("Pedido registrado con exito\n")
                 break
             else:
                 print("Tamaño de paquete invalido")
@@ -101,3 +101,4 @@ def imprimir_hoja_ruta(pedidos):
             archivo.write(f"Paquete mediano:{diccionarios["Paquete mediano"]}\n")
             archivo.write(f"Paquete grande:{diccionarios["Paquete grande"]}\n")
             archivo.write("\n")
+    print("Archivo txt creado con exito.")
